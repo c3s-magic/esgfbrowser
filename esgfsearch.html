@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+    <link rel="stylesheet" href="./jquery/jquery-ui.css" />
+    <link rel="stylesheet" href="./esgfsearch/weather-icons/css/weather-icons.min.css" />    
+    <script type="text/javascript" src="./jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./includes/ImpactJS.js"></script>
+    <script type="text/javascript" src="./jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./jquery/jquery.dialogextend.min.js"></script>
+    <script type="text/javascript" src="./includes/proj4js.js"></script>
+    <script type="text/javascript" src="./includes/adaguc-webmapjs/lang.en.js"></script>
+    <script type="text/javascript" src="./includes/adaguc-webmapjs/WMJS.min.js"></script>
+
+    <script type="text/javascript" src="./esgfbrowserconfig.js"></script>
+    <script type="text/javascript" src="./fileviewer/fileviewer.js"></script>
+    <script type="text/javascript" src="./fileviewer/vkbeautify.js"></script>
+    <link rel="stylesheet" href="./fileviewer/fileviewer.css" />
+    <script type="text/javascript" src="./catalogbrowser/catalogbrowser.js"></script>
+    <script type="text/javascript" src="./jquery/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="./esgfsearch/property_descriptions.js"></script>
+    <script type="text/javascript" src="./esgfsearch/esgfsearch-propertychooserconf.js"></script>
+    <script type="text/javascript" src="./esgfsearch/esgfsearch-propertychoosers.js"></script>
+    <script type="text/javascript" src="./esgfsearch/esgfsearch.js"></script>
+    <link rel="stylesheet" href="./esgfsearch/esgfsearch.css" />
+    <link rel="stylesheet" href="./esgfsearch/simplecomponent.css" />
+    <link rel="stylesheet" href="./body.css" />
+    <link rel="stylesheet" href="./esgfbrowser.css" />
+   
+      <title>ESGF Search</title>
+      <script type="text/javascript">
+        var basket ={
+          postIdentifiersToBasket:function(dataToAdd){
+            /*
+              * See reference implementation:
+              * https://climate4impact.eu/impactportal/js/components/basket/basket.js
+              */
+            console.log(dataToAdd);
+            alert("basket.postIdentifiersToBasket called");
+          }
+        };
+
+        /**
+          * Is called by the fileviewer when a user clicks on Sign in
+          * 
+          * callback can either be boolean true (check with === true) indicating a page reload
+          * callback can also be a function which needs to be called when finished.
+          */
+        var generateLoginDialog = function(callback){
+          /*
+            * See reference implementation 
+            * https://climate4impact.eu/impactportal/account/js/login.js
+            */
+          alert("generateLoginDialog called");
+          callback();
+        };
+      
+        $( document ).ready(function() {
+        var el = $("#searchcontainer");
+        renderSearchInterface({
+          element:el,
+          service:c4iconfigjs.searchservice,
+          //query:"project=clipc&variable=tas",//<-- Optional, prefill the search with a custom query.
+          catalogbrowserservice:c4iconfigjs.catalogbrowserservice
+        });
+      });
+    </script>
+</head>
+<body>
+<div style="width:954px;margin:auto;margin-top:10px;padding:10px">
+<div id="searchcontainer"></div> 
+</div>
+</body>
+</html>
