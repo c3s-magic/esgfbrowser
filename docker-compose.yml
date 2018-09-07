@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+     esgfsearch:
+        build: .
+        environment:
+          - "searchservice=https://compute-test.c3s-magic.eu:93/backend/esgfsearch/search?"
+          - "catalogbrowserservice=https://compute-test.c3s-magic.eu:93/backend/esgfsearch/catalog?"
+          - "adagucservice=https://compute-test.c3s-magic.eu:93/backend/adagucserver?"
+          - "getvariables=https://compute-test.c3s-magic.eu:93/backend/esgfsearch/getvariables?"
+          - "xml2jsonservice=https://compute-test.c3s-magic.eu:93/backend/xml2json?"
+          - "adagucviewer=https://portal.c3s-magic.eu/adaguc-viewer/"
+        ports:
+          - "10080:80"          

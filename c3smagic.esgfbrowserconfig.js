@@ -5,6 +5,6 @@ var c4iconfigjs = {
   adagucservice:"http://compute-test.c3s-magic.eu:9001/adagucserver?",
   getvariables:"http://compute-test.c3s-magic.eu:9001/esgfsearch/getvariables?",
   xml2jsonservice:"http://compute-test.c3s-magic.eu:9001/xml2json?",
-  adagucviewer:"https://climate4impact.eu/impactportal/adagucviewer/"
+  adagucviewer:"https://portal.c3s-magic.eu/adaguc-viewer/"
 }; 
 
