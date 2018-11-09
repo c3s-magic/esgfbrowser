@@ -928,9 +928,14 @@ var FileViewerInterface = function(options){
     service.getCapabilities(function(){
       service.getLayerNames(
             function(data){httpCallbackWMSCapabilities(data,WMSGetCapabiltiesURL);},
-            function(error){console.log(error);});
+            function(error){console.log(error);
+              handleErrorMessage({error:error});              
+            });
       },
-      function(error){console.log(error);},
+      function(error){
+        console.log(error);
+        handleErrorMessage({error:error});
+      },
       true
     );
 
