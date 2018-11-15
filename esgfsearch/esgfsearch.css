@@ -650,7 +650,7 @@ line-height:16px;
 /*.c4i-catalogbrowser-table tr:hover {background-color: #f0f0f0 !important}*/
 
 .c4i-catalogbrowser-table th{
-     background: none repeat scroll 0 0 #428bca;
+     background: none repeat scroll 0 0 rgb(148, 19, 51);
   
   
     color: white;
