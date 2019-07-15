@@ -1,10 +1,9 @@
 /* Configuration options */
 var c4iconfigjs = {
-  searchservice:"https://climate4impact.eu/impactportal/esgfsearch?",
-  catalogbrowserservice:"https://climate4impact.eu/impactportal/ImpactService?",
-  adagucservice:"https://climate4impact.eu/impactportal/adagucserver?",
-  getvariables:"https://climate4impact.eu/impactportal/ImpactService?",
-  xml2jsonservice:"https://climate4impact.eu/impactportal/AdagucViewer?SERVICE=XML2JSON&",
-  adagucviewer:"https://climate4impact.eu/impactportal/adagucviewer/"
-}; 
-
+    searchservice: 'https://portal.c3s-magic.eu/backend/esgfsearch/search?',
+    catalogbrowserservice: 'https://portal.c3s-magic.eu/backend/esgfsearch/catalog?',
+    adagucservice: 'https://portal.c3s-magic.eu/backend/adagucserver?',
+    getvariables: 'https://portal.c3s-magic.eu/backend/esgfsearch/getvariables?',
+    xml2jsonservice: 'https://portal.c3s-magic.eu/backend/xml2json?',
+    adagucviewer: 'https://portal.c3s-magic.eu/adaguc-viewer'
+};

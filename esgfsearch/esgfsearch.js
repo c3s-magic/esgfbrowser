@@ -75,7 +75,7 @@ var SearchInterface = function(options){
   var esdocurl="http://view.es-doc.org/?client_id=climate4impact_esgfsearch&";
   
   var _this = this;
-  //var impactESGFSearchEndPoint = "http://bhw485.knmi.nl:8280/impactportal/esgfsearch?";
+  //var impactESGFSearchEndPoint = "http://bhw485.knmi.nl:8280https://climate4impact.eu/impactportal/esgfsearch?";
   var impactESGFSearchEndPoint = "esgfsearch?";
   var impactCatalogBrowserEndPoint;
   
@@ -98,10 +98,10 @@ var SearchInterface = function(options){
   
   var facetDescription = {
       "domain":"This filter lists the geographical domains for CORDEX projects. For more info check <a target=\"_blank\" href=\"http://www.cordex.org/\">http://www.cordex.org/</a>. ",
-      "model":"Choose the climate model. Read more at the <a target=\"_blank\" href=\"/impactportal/general/index.jsp?q=climate_models\">Climate models</a> page.",
+      "model":"Choose the climate model. Read more at the <a target=\"_blank\" href=\"https://climate4impact.eu/impactportal/general/index.jsp?q=climate_models\">Climate models</a> page.",
       "access":"Choose the type of access. OpenDAP enables visualization and processing on this portal. Use HTTPServer for direct download.",
-      "variable":"Choose the Parameter. A list of CMIP5 variables is published at the <a target=\"_blank\" href=\"/impactportal/documentation.jsp?q=listofcmip5variables\">CMIP5 variables</a> page. If you select from 'All Parameters' you can reduce the list by first chosing the appropriate 'Realm'.",
-      "ensemble":"Choose ensemble member. For most impact assessments a single member is enough (choose 'r1i1p1'); you do need more members in case you are interested in a) rare (extreme) events, b) changes over  <a target=\"_blank\" href=\"/impactportal/documentation/backgroundandtopics.jsp?q=scenarios_2030\">short periods/time horizons (<30yrs)</a> ",
+      "variable":"Choose the Parameter. A list of CMIP5 variables is published at the <a target=\"_blank\" href=\"https://climate4impact.eu/impactportal/documentation.jsp?q=listofcmip5variables\">CMIP5 variables</a> page. If you select from 'All Parameters' you can reduce the list by first chosing the appropriate 'Realm'.",
+      "ensemble":"Choose ensemble member. For most impact assessments a single member is enough (choose 'r1i1p1'); you do need more members in case you are interested in a) rare (extreme) events, b) changes over  <a target=\"_blank\" href=\"https://climate4impact.eu/impactportal/documentation/backgroundandtopics.jsp?q=scenarios_2030\">short periods/time horizons (<30yrs)</a> ",
       "realm": "Choose earth system compartment to reduce the list of 'Parameters'",
       "institute":"Choose institute to reduce list of 'Models'",
       "experiment_family": "Choose family to reduce list of 'experiments', see <a target=\"_blank\" href=\http://cmip-pcmdi.llnl.gov/cmip5/getting_started_CMIP5_experiment.html#_T4\">CMIP5 Experiments</a>",
@@ -253,7 +253,7 @@ var SearchInterface = function(options){
 //        el.html(data);    
 //      }
 //      $.ajax({
-//        url: "esgfsearch/esgfsearchhelp.html"     
+//        url: "esgfsearchhelp.html"     
 //      }).done(function(d) {
 //        helpReturned(d)
 //      })
